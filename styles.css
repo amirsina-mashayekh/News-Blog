@@ -284,3 +284,39 @@ footer {
 .news-main-image {
     float: left;
 }
+
+.login-header {
+    margin: 20px auto;
+}
+
+.login-form-container {
+    width: 40%;
+    margin: auto;
+}
+
+.login-form-container > div {
+    padding: 25px;
+}
+
+.login-fields {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    direction: ltr;
+}
+
+.login-form-container > div button[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    width: 100%;
+}
+
+.login-form-container button[type=submit]:hover {
+    opacity: 0.75;
+}
