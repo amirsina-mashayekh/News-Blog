@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <title>ثبت نام - بلاگ اخبار</title>
+</head>
+<body>
+    <div class="form-page-form-container">
+        <h1 class="form-page-header">ایجاد حساب کاربری</h1>
+        <div class="box-shadow-5 rounded-corner-8">
+            <form method="post" action="#">
+                <label for="firstname"><b>نام</b></label>
+                <input type="text" class="form-page-fields" name="firstname" required>
+
+                <label for="lastname"><b>نام خانوادگی</b></label>
+                <input type="text" class="form-page-fields" name="lastname" required>
+
+                <label for="username"><b>نام کاربری</b></label>
+                <input type="text" class="form-page-fields" name="username" required>
+
+                <label for="password"><b>کلمه عبور</b></label>
+                <input type="password" class="form-page-fields" name="password" minlength="8" required>
+
+                <label for="password-repeat"><b>تکرار کلمه عبور</b></label>
+                <input type="password" class="form-page-fields" name="password-repeat" required>
+
+                <label for="email"><b>آدرس ایمیل</b></label>
+                <input type="email" class="form-page-fields" name="email" required>
+
+                <label for="phone-number"><b>شماره تلفن</b></label>
+                <input type="tel" class="form-page-fields" name="phone-number" required>
+                    
+                <button type="submit">ایجاد حساب کاربری</button>
+            </form>
+            <div><a href="login.html">ورود به حساب کاربری</a></div>
+            <div><a href="index.html">بازگشت به صفحه اصلی</a></div>
+        </div>
+    </div>
+</body>
+</html>
