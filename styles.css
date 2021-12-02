@@ -251,6 +251,10 @@ footer {
     justify-content: space-between;
 }
 
+.news-list {
+    width: 75%;
+}
+
 .news-list-section .news-preview-container {
     margin: 20px 0;
     min-height: 150px;
@@ -258,4 +262,25 @@ footer {
 
 .left-bar .other-news-list {
     padding: 8px;
+}
+
+.full-news-section .flex-80-row-container {
+    justify-content: space-between;
+}
+
+.full-news-container {
+    width: 70%;
+}
+
+.full-news-container p {
+    text-align: justify;
+}
+
+.news-main-image {
+    width: 45%;
+    margin-right: 10px;
+}
+
+.news-main-image {
+    float: left;
 }
