@@ -38,6 +38,11 @@ body {
     top: 0;
 }
 
+.navbar-logo {
+    float: right;
+    margin: 0 10px;
+}
+
 .navbar-item {
     padding: 15px 20px;
     float: right;
@@ -285,13 +290,31 @@ footer {
     float: left;
 }
 
-.form-page-header {
-    margin: 20px auto;
-}
-
 .form-page-form-container {
     width: 40%;
     margin: auto auto 60px auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .form-page-form-container {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .form-page-form-container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .form-page-form-container {
+        width: 95%;
+    }
+}
+
+.form-page-header {
+    margin: 20px auto;
 }
 
 .form-page-form-container > div {
