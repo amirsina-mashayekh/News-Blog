@@ -7,8 +7,14 @@
     <link type="text/css" rel="stylesheet" href="styles.css">
     <title>بلاگ اخبار</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script>
+        window.onload = function() {
+            // Remove class to enable transitions
+            document.querySelector("body").classList.remove("prevent-transition-trigger");
+        };
+    </script>
 </head>
-<body>
+<body class="prevent-transition-trigger">
     <div class="navbar">
         <a class="navbar-item active" href="index.html">
             صفحه اصلی

@@ -7,8 +7,13 @@
     <link type="text/css" rel="stylesheet" href="styles.css">
     <title>ثبت نام - بلاگ اخبار</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script>
+        window.onload = function() {
+            document.querySelector("body").classList.remove("prevent-transition-trigger");
+        };
+    </script>
 </head>
-<body>
+<body class="prevent-transition-trigger">
     <div class="form-page-form-container">
         <h1 class="form-page-header">ایجاد حساب کاربری</h1>
         <div class="box-shadow-5 rounded-corner-8">
