@@ -273,6 +273,12 @@ footer {
     background-color: darkslategray;
 }
 
+@media screen and (max-width: 425px) {
+    .subscription-form {
+        display: none;
+    }
+}
+
 .single-input-text {
     padding: 6px 15px;
     margin: 8px 0;
