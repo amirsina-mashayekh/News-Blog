@@ -381,6 +381,11 @@ footer {
     padding: 8px;
 }
 
+.other-news-list a {
+    color: black;
+    text-decoration: none;
+}
+
 .full-news-section {
     padding: 30px 0;
 }
