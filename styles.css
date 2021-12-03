@@ -49,8 +49,6 @@ body {
     width: auto;
     display: block;
     text-align: center;
-    text-decoration: none;
-    color: black;
 }
 
 .navbar .active {
@@ -69,13 +67,18 @@ body {
     justify-content: flex-end;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .search-form .single-input-text {
         width: 50%;
     }
+
+    .search-form {
+        justify-content: center;
+        padding: 0;
+    }
 }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 700px) {
     body {
         padding: 0;
     }
@@ -114,9 +117,11 @@ body {
     grid-template-rows: 80% auto;
 }
 
-.most-important-news a {
+.most-important-news a, .news-preview-container a,
+.popular-news-container a, .other-news-list a,
+.footer-info a, .navbar-item {
     text-decoration: none;
-    color: black;
+    color: darkblue;
 }
 
 .most-important-news a img {
@@ -154,11 +159,6 @@ body {
     border-top-right-radius: 3px !important;
     border-bottom-right-radius: 3px !important;
     overflow: hidden;
-}
-
-.news-preview-container a {
-    text-decoration: none;
-    color: black;
 }
 
 .news-preview-container img {
@@ -236,11 +236,6 @@ body {
     flex-flow: column;
 }
 
-.popular-news-container a {
-    text-decoration: none;
-    color: black;
-}
-
 .popular-news-container a img {
     height: 100%;
     width: 100%;
@@ -289,7 +284,7 @@ footer {
     border-radius: 0 999px 999px 0;
 }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 700px) {
     .subscription-form {
         padding: 6px 20px;
     }
@@ -335,15 +330,13 @@ footer {
 
 .footer-info div *:not(h4) {
     font-size: 0.8rem;
-    color: black;
-    text-decoration: none;
 }
 
 .footer-info div p {
     text-align: justify;
 }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 700px) {
     .footer-info {
         grid-template-columns: 0 60% 40%;
     }
@@ -387,11 +380,6 @@ footer {
     padding: 8px;
 }
 
-.other-news-list a {
-    color: black;
-    text-decoration: none;
-}
-
 .full-news-section {
     padding: 30px 0;
 }
@@ -413,7 +401,7 @@ footer {
     margin-bottom: 20px;
 }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 700px) {
     .news-main-image {
         width: 100%;
         float: none;
