@@ -208,6 +208,12 @@ body {
     margin: 5px 2px;
 }
 
+@media screen and (max-width: 800px) {
+    .brief-news-list .news-preview-container {
+        width: 100%;
+    }
+}
+
 .left-bar {
     width: 25%;
     align-items: center;
@@ -392,8 +398,16 @@ footer {
     max-height: 400px;
     object-fit: cover;
     float: left;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 670px) {
+    .news-main-image {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
 }
 
 .form-page-form-container {
