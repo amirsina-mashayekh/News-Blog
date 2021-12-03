@@ -101,7 +101,6 @@ body {
 }
 
 .important-news-section > div {
-    align-content: center;
     justify-content: space-between;
 }
 
@@ -137,6 +136,16 @@ body {
     width: 35%;
 }
 
+@media screen and (max-width: 975px) {
+    .important-news-list {
+        display: none;
+    }
+
+    .most-important-news {
+        width: 100%;
+    }
+}
+
 .news-preview-container {
     display: grid;
     grid-template-columns: 40% auto;
@@ -168,12 +177,15 @@ body {
 
 .news-preview-container > div p {
     font-size: 0.875rem;
-    margin: 0;
 }
 
 .brief-news-section {
     display: flex;
     padding: 20px 0;
+}
+
+.main-content {
+    width: 70%;
 }
 
 .brief-news-container {
@@ -186,7 +198,6 @@ body {
     align-items: center;
     align-content: space-between;
     margin: 0;
-    width: 75%;
     height: auto;
     justify-content: space-around;
     padding: 10px;
@@ -200,6 +211,16 @@ body {
 .left-bar {
     width: 25%;
     align-items: center;
+}
+
+@media screen and (max-width: 975px) {
+    .left-bar {
+        display: none;
+    }
+
+    .main-content {
+        width: 100%;
+    }
 }
 
 .popular-news-container {
@@ -302,9 +323,33 @@ footer {
 
 .footer-info div *:not(h4) {
     font-size: 0.8rem;
-    text-align: justify;
     color: black;
     text-decoration: none;
+}
+
+.footer-info div p {
+    text-align: justify;
+}
+
+@media screen and (max-width: 670px) {
+    .footer-info {
+        grid-template-columns: 0 60% 40%;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .footer-info {
+        grid-template-columns: auto;
+        grid-template-rows: 0 auto auto;
+    }
+
+    .footer-logo {
+        display: none;
+    }
 }
 
 .copyright {
@@ -319,10 +364,6 @@ footer {
 
 .news-list-section .flex-80-row-container {
     justify-content: space-between;
-}
-
-.news-list {
-    width: 70%;
 }
 
 .news-list-section .news-preview-container {
@@ -340,10 +381,6 @@ footer {
 
 .full-news-section .flex-80-row-container {
     justify-content: space-between;
-}
-
-.full-news-container {
-    width: 70%;
 }
 
 .full-news-container p {
